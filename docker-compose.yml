@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  client_requests:
+    image: itarca/client-request
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7777:7777"
+    container_name: client_requests
+    restart: always
+
